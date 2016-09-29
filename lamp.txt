@@ -1,0 +1,22 @@
+4.1安装Apache 
+yum install httpd httpd-devel 
+重启Apache
+service httpd restart  
+
+安装mysql 
+yum install mysql mysql-server mysql-devel 
+重启mysqld
+service mysqldrestart  
+
+4.3 设置mysql密码 
+
+设置mysql密码还可以用：mysql_secure_installation 命令
+
+4.5安装php 
+yum install php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml  
+service httpd restart 
+在/var/www/html/新建个test.php文件，将以下内容写入，然后保存。 
+<? 
+phpinfo(); 
+?> 
+
